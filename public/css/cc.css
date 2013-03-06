@@ -39,8 +39,8 @@ header .slogan {
 }
 
 nav {
-	height: 60px;
-	line-height: 40px;
+	height: 50px;
+	line-height: 50px;
 	text-align: center;
 	padding: 10px;
 	background: #fff;
@@ -54,15 +54,28 @@ nav.fixed {
 }
 
 nav a {
+	/*
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	font-weight: bold;
+	background: #ddd;
 	border: 1px solid #555;
+	*/
+	font-weight: bold;
 	padding: 5px 15px;
 	margin: 0 5px;
 	font-size: 16pt;
-	background: #ddd;
+	text-decoration: none;
+	color: #444;
+}
+
+nav a:active,
+nav a:visited {
+	color: #444;
+}
+
+nav a:hover {
+	color: #999;
 }
 
 footer {
@@ -74,8 +87,17 @@ footer {
 	background: #111;
 }
 
+.top {
+	margin: 0 auto;
+	width: 0px;
+	height: 0px;
+	border: 20px solid;
+	border-color: transparent transparent  #111 transparent;
+	border-style: dashed dashed solid dashed ;
+}
+
 div h2 {
-	font-size: 24pt;
+	font-size: 28pt;
 	padding: 0;
 	margin: 0;
 }
@@ -85,11 +107,10 @@ div h2 {
 	min-height: 200px;
 	min-width: 800px;
 	max-width: 1024px;
-	padding: 30px 5px;
+	padding: 30px 5px 45px 5px;
 }
 
 .block .title {
-	border: 1px solid #ddd;
 	width: 350px;
 	padding: 5px 15px;
 }
@@ -99,19 +120,32 @@ div h2 {
 }
 
 .block .content {
-	padding: 5px 15px;
+	padding: 5px 25px;
 }
 
 #about {
-	
+	background: #333;
+	color: #eee;
 }
 
-#service {
-	background: #333;
+#services {
+	background: #fff;
+	color: #333;
 }
 
 #opening {
-	
+	background: #eee;
+	color: #555;
+}
+
+#contact {
+	background: #222;
+	color: #eee;
+}
+
+#services .menu {
+	width: 200px;
+	border-right: 1px solid #bbb;
 }
 
 #opening table {
@@ -127,6 +161,11 @@ div h2 {
 
 #opening thead {
 	font-size: 20px;
+	background: #bbb;
+}
+
+#opening table tr:nth-child(even) {
+	background: #ddd;
 }
 
 #opening table span {
@@ -139,8 +178,4 @@ div h2 {
 	margin: 2px;
 	width: 100px;
 	height: 50px;
-}
-
-#contact {
-	background: #333;
 }

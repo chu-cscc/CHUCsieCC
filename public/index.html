@@ -11,54 +11,66 @@
 	<link rel="stylesheet" href="css/cc.css">
 </head>
 <body>
-	<header>
+	<header id="top">
 		<h1>中華大學資工系計中</h1>
 		<span class="slogan">CHU CSIE - Computer Center</span>
 	</header>
 	<nav>
 		<a href="#about">關於</a>
-		<a href="#service">服務</a>
-		<a href="#open">開放時間</a>
+		<a href="#services">服務</a>
+		<a href="#opening">開放時間</a>
 		<a href="#contact">聯絡</a>
 	</nav>
 
-	<div id="about">
+	<div id="about" class="main_block">
 		<div class="block about">
 			<div class="title">
 				<h2>關於</h2>
 				<span>- About</span>
 			</div>
 			<div class="content">
-				<p>過去發生的就讓它過去，一切重新來過。</p>
+				<p>既然回不到過去，那只好重新來過。</p>
 			</div>
 		</div>
 	</div>
-	<div id="service">
-		<div class="block service">
+
+	<div id="services" class="main_block">
+		<div class="block services">
 			<div class="title">
 				<h2>服務</h2>
-				<span>- Service</span>
+				<span>- Services</span>
 			</div>
 			<div class="content">
-				<h3>個人網頁空間</h3>
-				<p>尚未開放</p>
-
-				<h3>檔案鏡像站</h3>
-				<p>
-					<span>已提供檔案如下</span>
-					<ul>
-						<li>ArchLinux</li>
-						<li>CentOS</li>
-						<li>Ubuntu</li>
-					</ul>
-				</p>
-
-				<h3>伺服器域名申請</h3>
-				<p>尚未開放</p>
+				<div class="menu">
+					<h3>個人網頁空間</h3>
+					<p>尚未開放</p>
+					<br />
+					<h3>檔案鏡像站</h3>
+					<p>
+						<span>Linux套件庫</span>
+						<ul>
+							<li>ArchLinux</li>
+							<li>CentOS</li>
+							<li>Ubuntu</li>
+						</ul>
+						<span>Linux安裝光碟</span>
+						<ul>
+							<li>ArchLinux</li>
+							<li>CentOS</li>
+							<li>Ubuntu</li>
+						</ul>
+					</p>
+					<br />
+					<h3>伺服器域名申請</h3>
+					<p>尚未開放</p>
+				</div>
+				<div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div id="opening">	
+
+	<div id="opening" class="main_block">	
 		<div class="block opening">
 			<div class="title">
 				<h2>開放時間</h2>
@@ -155,19 +167,23 @@
 			</div>
 		</div>
 	</div>
-	<div id="contact">
+
+	<div id="contact" class="main_block">
 		<div class="block contact">
 			<div class="title">
 				<h2>聯絡</h2>
 				<span>- Contact</span>
 			</div>
 			<div class="content">
-
+				<h3>E113 | 網際網路計算實驗室</h3>
+				<br />
+				<h3>E106 | 資訊志工社</h3>
 			</div>
 		</div>
+		<a href="javascript:void(0);"><div class="top"></div></a>
 	</div>
 
-	<footer>Copyright (c) 2013 中華大學資訊工程系 - 計算機中心</footer>
+	<footer>Copyright (c) 2013 中華大學資訊工程系 計算機中心</footer>
 
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script src="js/cc.js"></script>

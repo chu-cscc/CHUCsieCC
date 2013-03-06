@@ -14,6 +14,11 @@ var setOnNavBottonClick = function () {
 
 $(document).ready(function () {
 	setOnNavBottonClick();
+
+	$('.top').on('click', function () {
+		event.preventDefault();
+		$('html, body').stop().animate({ scrollTop: 0 }, 750);
+	});
 });
 
 var fixed_nav_active = false;
