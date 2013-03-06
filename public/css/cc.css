@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* ScarWu, 2013 */
+
+html {
+	overflow-y: auto;
+}
+
+body {
+	font-family: '微軟正黑體', '儷黑Pro', 'Ubuntu', Arial;
+	font-size: 12pt;
+	padding: 0;
+	min-height: 600px;
+	min-width: 800px;
+}
+
+header {
+	text-align: center;
+	top: 0px;
+	width: 100%;
+	background: #fff;
+	height: 140px;
+	overflow: hidden;
+}
+
+header h1,
+header .slogan {
+	padding: 0;
+	margin: 0;
+}
+
+header h1 {
+	margin-top: 40px;
+	font-size: 32pt;
+	color: #333;
+}
+
+header .slogan {
+	color: #999;
+}
+
+nav {
+	height: 60px;
+	line-height: 40px;
+	text-align: center;
+	padding: 10px;
+	background: #fff;
+}
+
+nav.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+nav a {
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	font-weight: bold;
+	border: 1px solid #555;
+	padding: 5px 15px;
+	margin: 0 5px;
+	font-size: 16pt;
+	background: #ddd;
+}
+
+footer {
+	text-align: center;
+	color: #999;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	background: #111;
+}
+
+div h2 {
+	font-size: 24pt;
+	padding: 0;
+	margin: 0;
+}
+
+.block {
+	margin: 0 auto;
+	min-height: 200px;
+	min-width: 800px;
+	max-width: 1024px;
+	padding: 30px 5px;
+}
+
+.block .title {
+	border: 1px solid #ddd;
+	width: 350px;
+	padding: 5px 15px;
+}
+
+.block .title span {
+	padding-left: 25px;
+}
+
+.block .content {
+	padding: 5px 15px;
+}
+
+#about {
+	
+}
+
+#service {
+	background: #333;
+}
+
+#opening {
+	
+}
+
+#opening table {
+	margin: 15px auto;
+	text-align: center;
+}
+
+#opening table h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+#opening thead {
+	font-size: 20px;
+}
+
+#opening table span {
+	font-size: 14px;
+}
+
+#opening td {
+	vertical-align: middle;
+	padding: 5px;
+	margin: 2px;
+	width: 100px;
+	height: 50px;
+}
+
+#contact {
+	background: #333;
+}
