@@ -58,6 +58,7 @@
 					<h3>Web Server</h3>
 					<div class="<?php echo $status[8] ? "up" : "down"; ?>"></div>
 				</div>
+				<div class="date">上次更新 <?=$status['date']?></div>
 			</div>
 		</div>
 	</div>

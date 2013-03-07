@@ -173,7 +173,7 @@ div h2 {
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	width: 60px;
+	width: 75px;
 	height: 10px;
 	display: inline-block;
 }
@@ -184,9 +184,13 @@ div h2 {
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	width: 60px;
+	width: 75px;
 	height: 10px;
 	display: inline-block;
+}
+
+#status .content .date {
+	margin-top: 10px;
 }
 
 #services {
@@ -237,11 +241,11 @@ div h2 {
 #services .info .mirror img {
 	width: 150px;
 	height: 150px;
-	filter: grayscale(75%);
-	-webkit-filter: grayscale(75%);
-	-moz-filter: grayscale(75%);
-	-ms-filter: grayscale(75%);
-	-o-filter: grayscale(75%);
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 }
 
 #services .info .mirror img:hover {

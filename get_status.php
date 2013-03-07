@@ -13,5 +13,8 @@
 		$output[$index] = preg_match("/1 host up/", $result) == 1;
 	}
 
+	date_default_timezone_set('Asia/Taipei');
+	$output['date'] = date('Y-m-d h:i:s');
+
 	fwrite(fopen('./status.json', "w+"), json_encode($output));
 ?>
