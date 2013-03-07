@@ -112,6 +112,20 @@ div h2 {
 	padding: 30px 5px 45px 5px;
 }
 
+.block a {
+	text-decoration: none;
+	color: #444;
+}
+
+.block a:active,
+.block a:visited {
+	color: #444;
+}
+
+.block a:hover {
+	color: #999;
+}
+
 .block .title {
 	width: 350px;
 	padding: 5px 15px;
@@ -167,6 +181,12 @@ div h2 {
 #services .info {
 	padding: 5px 25px 5px 250px;
 	width: 100%;
+}
+
+#services .info .mirror a {
+	display: inline-block;
+	text-align: center;
+	margin-right: 25px;
 }
 
 #services .info .mirror img {
