@@ -56,13 +56,6 @@ nav.fixed {
 }
 
 nav a {
-	/*
-	border-radius: 5px; 
-	-moz-border-radius: 5px; 
-	-webkit-border-radius: 5px;
-	background: #ddd;
-	border: 1px solid #555;
-	*/
 	font-weight: bold;
 	padding: 5px 15px;
 	margin: 0 5px;
@@ -174,6 +167,11 @@ div h2 {
 #services .info {
 	padding: 5px 25px 5px 250px;
 	width: 100%;
+}
+
+#services .info .mirror img {
+	width: 150px;
+	height: 150px;
 }
 
 #opening {
