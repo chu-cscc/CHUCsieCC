@@ -157,9 +157,9 @@ div h2 {
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
-	border: 1px solid #ddd;
-	background: #ccc;
-	color: #333;
+	border: 1px solid #222;
+	background: #444;
+	color: #ccc;
 	display: inline-block;
 	padding: 5px 0 15px 0;
 	width: 150px;
@@ -168,8 +168,8 @@ div h2 {
 }
 
 #status .content .up {
-	border: 1px solid #006600;
-	background: #00cc00;
+	border: 1px solid #003300;
+	background: #009900;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
@@ -179,8 +179,8 @@ div h2 {
 }
 
 #status .content .down {
-	border: 1px solid #660000;
-	background: #cc0000;
+	border: 1px solid #330000;
+	background: #990000;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
 	-webkit-border-radius: 5px;
