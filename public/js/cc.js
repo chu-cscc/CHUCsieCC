@@ -8,7 +8,7 @@ var setOnNavBottonClick = function () {
 		var target = $(this).attr('href');
 		var moveTo = $(target).position().top - $('nav').height();
 
-		$(window).stop().animate({ scrollTop: moveTo }, 750);
+		$('html, body').stop().animate({ scrollTop: moveTo }, 750);
 	});
 }
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 $('.top').on('click', function (event) {
 	event.preventDefault();
-	$(window).stop().animate({ scrollTop: 0 }, 750);
+	$('html, body').stop().animate({ scrollTop: 0 }, 750);
 });
 
 $('#services .menu .item').on('mouseover', function() {
