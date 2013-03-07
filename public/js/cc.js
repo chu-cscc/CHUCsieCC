@@ -2,7 +2,7 @@
 /* ScarWu, 2013 */
 
 var setOnNavBottonClick = function () {
-	$('nav a').on('click', function () {
+	$('nav a').on('click', function (event) {
 		event.preventDefault();
 
 		var target = $(this).attr('href');
@@ -17,7 +17,7 @@ $(document).ready(function () {
 	$('#services .info .mirror').siblings().hide();
 });
 
-$('.top').on('click', function () {
+$('.top').on('click', function (event) {
 	event.preventDefault();
 	$('html, body').stop().animate({ scrollTop: 0 }, 750);
 });
