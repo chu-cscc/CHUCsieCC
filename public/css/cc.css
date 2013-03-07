@@ -140,8 +140,53 @@ div h2 {
 }
 
 #about {
+	background: #ddd;
+	color: #333;
+}
+
+#status {
 	background: #333;
 	color: #eee;
+}
+
+#status .content {
+	text-align: center;
+}
+
+#status .content .server {
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border: 1px solid #ddd;
+	background: #ccc;
+	color: #333;
+	display: inline-block;
+	padding: 5px 0 15px 0;
+	width: 150px;
+	margin: 5px 10px;
+	text-align: center;
+}
+
+#status .content .up {
+	border: 1px solid #006600;
+	background: #00cc00;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	width: 60px;
+	height: 10px;
+	display: inline-block;
+}
+
+#status .content .down {
+	border: 1px solid #660000;
+	background: #cc0000;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	width: 60px;
+	height: 10px;
+	display: inline-block;
 }
 
 #services {
@@ -192,6 +237,19 @@ div h2 {
 #services .info .mirror img {
 	width: 150px;
 	height: 150px;
+	filter: grayscale(75%);
+	-webkit-filter: grayscale(75%);
+	-moz-filter: grayscale(75%);
+	-ms-filter: grayscale(75%);
+	-o-filter: grayscale(75%);
+}
+
+#services .info .mirror img:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
 }
 
 #opening {

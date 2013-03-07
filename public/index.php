@@ -1,3 +1,7 @@
+<?php
+	$json = fread(fopen('../status.json', 'r'), 1024);
+	$status = json_decode($json, true);
+?>
 <!doctype html>
 <html lang="zh-tw">
 <head>
@@ -17,6 +21,7 @@
 	</header>
 	<nav>
 		<a href="#about">關於</a>
+		<a href="#status">伺服器狀態</a>
 		<a href="#services">服務</a>
 		<a href="#opening">開放時間</a>
 		<a href="#contact">聯絡</a>
@@ -30,6 +35,29 @@
 			</div>
 			<div class="content">
 				<p>既然回不到過去，那只好重新來過。</p>
+			</div>
+		</div>
+	</div>
+	
+	<div id="status" class="main_block">
+		<div class="block status">
+			<div class="title">
+				<h2>伺服器狀態</h2>
+				<span>- Server Status</span>
+			</div>
+			<div class="content">
+				<div class="dns server">
+					<h3>DN Server</h3>
+					<div class="<?php echo $status[20] ? "up" : "down"; ?>"></div>
+				</div>
+				<div class="ftp server">
+					<h3>FTP Server</h3>
+					<div class="<?php echo $status[11] ? "up" : "down"; ?>"></div>
+				</div>
+				<div class="web server">
+					<h3>Web Server</h3>
+					<div class="<?php echo $status[8] ? "up" : "down"; ?>"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -82,13 +110,19 @@
 						</a>
 					</div>
 					<div class="personal">
-						<h3>建置中</h3>
+						<h3>網頁空間說明</h3>
+						<span>建置中</span>
 					</div>
 					<div class="dns">
-						<h3>建置中</h3>
+						<h3>相關辦法</h3>
+						<span>建置中</span>
 					</div>
 					<div class="classroom">
-						<h3>中華大學工程一館 E106</h3>
+						<h3>地點</h3>
+						<span>中華大學工程一館 E106</span>
+						<hr>
+						<h3>說明</h3>
+						<span>建置中</span>
 					</div>
 				</div>
 			</div>
