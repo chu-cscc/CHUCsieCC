@@ -142,11 +142,16 @@ div h2 {
 	color: #333;
 }
 
+#services .content {
+	overflow: hidden;
+}
+
 #services .menu {
 	width: 200px;
 	padding: 10px 0;
 	border-right: 1px solid #bbb;
 	display: inline-block;
+	float: left;
 }
 
 #services .menu .item {
@@ -155,6 +160,7 @@ div h2 {
 	padding: 0px 2px;
 	margin: 1px 0;
 	border: 1px solid #fff;
+	clear: both;
 }
 
 #services .item.active {
@@ -166,8 +172,8 @@ div h2 {
 }
 
 #services .info {
-	padding: 5px 25px 5px 50px;
-	display: inline-block;
+	padding: 5px 25px 5px 250px;
+	width: 100%;
 }
 
 #opening {
