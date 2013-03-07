@@ -51,6 +51,8 @@ nav.fixed {
 	top: 0;
 	left: 0;
 	right: 0;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0px -2px 10px #333;
 }
 
 nav a {
@@ -82,9 +84,15 @@ footer {
 	text-align: center;
 	color: #999;
 	height: 50px;
-	line-height: 50px;
+	width: 100%;
 	font-size: 14px;
 	background: #111;
+	display: table;
+}
+
+footer > div {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .top {
@@ -93,7 +101,8 @@ footer {
 	height: 0px;
 	border: 20px solid;
 	border-color: transparent transparent  #111 transparent;
-	border-style: dashed dashed solid dashed ;
+	border-style: dashed dashed solid dashed;
+	cursor: pointer;
 }
 
 div h2 {
@@ -104,7 +113,7 @@ div h2 {
 
 .block {
 	margin: 0 auto;
-	min-height: 200px;
+	min-height: 150px;
 	min-width: 800px;
 	max-width: 1024px;
 	padding: 30px 5px 45px 5px;
@@ -133,19 +142,41 @@ div h2 {
 	color: #333;
 }
 
+#services .menu {
+	width: 200px;
+	padding: 10px 0;
+	border-right: 1px solid #bbb;
+	display: inline-block;
+}
+
+#services .menu .item {
+	width: 175px;
+	text-align: center;
+	padding: 0px 2px;
+	margin: 1px 0;
+	border: 1px solid #fff;
+}
+
+#services .item.active {
+	background: #eee;
+	border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	border: 1px solid #ddd;
+}
+
+#services .info {
+	padding: 5px 25px 5px 50px;
+	display: inline-block;
+}
+
 #opening {
 	background: #eee;
 	color: #555;
 }
 
-#contact {
-	background: #222;
-	color: #bbb;
-}
-
-#services .menu {
-	width: 200px;
-	border-right: 1px solid #bbb;
+#opening .content > h3 {
+	text-align: center;
 }
 
 #opening table {
@@ -178,4 +209,9 @@ div h2 {
 	margin: 2px;
 	width: 100px;
 	height: 50px;
+}
+
+#contact {
+	background: #222;
+	color: #bbb;
 }
