@@ -8,7 +8,7 @@ var setOnNavBottonClick = function () {
 		var target = $(this).attr('href');
 		var moveTo = $(target).position().top - $('nav').height();
 
-		$('html, body').stop().animate({ scrollTop: moveTo }, 750);
+		$(window).stop().animate({ scrollTop: moveTo }, 750);
 	});
 }
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 $('.top').on('click', function (event) {
 	event.preventDefault();
-	$('html, body').stop().animate({ scrollTop: 0 }, 750);
+	$(window).stop().animate({ scrollTop: 0 }, 750);
 });
 
 $('#services .menu .item').on('mouseover', function() {
@@ -31,7 +31,7 @@ $('#services .menu .item').on('mouseover', function() {
 
 var fixed_nav_active = false;
 $(window).on('scroll', function () {
-	if ($('body').scrollTop() >= $('header').height()) {
+	if ($(window).scrollTop() >= $('header').height()) {
 		if (!fixed_nav_active) {
 			var nav = $('nav').clone().addClass('fixed');
 
