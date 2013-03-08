@@ -1,5 +1,6 @@
 <?php
-require('../initialize.php');
+$json = fread(fopen('../status.json', 'r'), 1024);
+$status = json_decode($json, true);
 ?>
 <!doctype html>
 <html lang="zh-tw">
