@@ -1,6 +1,5 @@
 <?php
-	$json = fread(fopen('../status.json', 'r'), 1024);
-	$status = json_decode($json, true);
+require('../initialize.php');
 ?>
 <!doctype html>
 <html lang="zh-tw">
@@ -48,15 +47,15 @@
 			<div class="content">
 				<div class="dns server">
 					<h3>DN Server</h3>
-					<div class="<?php echo $status[20] ? "up" : "down"; ?>"></div>
+					<div class="<?=$status[20] ? "up" : "down"?>"></div>
 				</div>
 				<div class="ftp server">
 					<h3>FTP Server</h3>
-					<div class="<?php echo $status[11] ? "up" : "down"; ?>"></div>
+					<div class="<?=$status[11] ? "up" : "down"?>"></div>
 				</div>
 				<div class="web server">
 					<h3>Web Server</h3>
-					<div class="<?php echo $status[8] ? "up" : "down"; ?>"></div>
+					<div class="<?=$status[8] ? "up" : "down"?>"></div>
 				</div>
 				<div class="date">上次更新 <?=$status['date']?></div>
 			</div>
