@@ -11,10 +11,11 @@ $('body').delegate('nav a', 'click', function (event) {
 	var target = $(this).attr('href');
 	var moveTo = $(target).position().top - $('nav').height();
 
-	$('html, body').stop().animate({ scrollTop: moveTo }, 750);
+	$('html, body').stop().animate({
+		scrollTop: moveTo
+	}, 750);
 }).delegate('#services .menu .item', 'mouseover', function() {
-	$(this).addClass('active');
-	$(this).siblings().removeClass('active');
+	$(this).addClass('active').siblings().removeClass('active');
 
 	var target = $(this).attr('class').split(' ')[0];
 	$('#services .info .' + target).show().siblings().hide();
@@ -22,50 +23,45 @@ $('body').delegate('nav a', 'click', function (event) {
 
 $('.top').on('click', function (event) {
 	event.preventDefault();
-	$('html, body').stop().animate({ scrollTop: 0 }, 750);
-});
 
-var fixed_nav_active = false;
-var fixed_block_active = {};
+	$('html, body').stop().animate({
+		scrollTop: 0
+	}, 750);
+});
 
 $(window).on('scroll', function () {
 	for (var index = 0;index < $('.main_block.static').size();index++) {
 		var top = $('.main_block.static').eq(index).position().top;
-		var block_id = $('.main_block.static').eq(index).attr('id');
+		var id = '#' + $('.main_block.static').eq(index).attr('id');
 
 		if ($(window).scrollTop() >= (top - $('nav').height())) {
-			if(fixed_block_active[block_id])
+			if($(id + '.fixed').size() != 0)
 				continue;
 
-			var block = $('.main_block.static').eq(index).clone();
-			block.removeClass('static').addClass('fixed').css({ 'z-index': top, top: $('nav').height()});
-			$('.main_block.static').eq(index).css({ 'z-index': index });
-			$('body').append(block);
+			$(id + '.static').css({ 'z-index': index });
 
-			fixed_block_active[block_id] = true;
+			var block = $(id + '.static').clone();
+			block.removeClass('static').addClass('fixed').css({
+				'z-index': top,
+				top: $('nav').height()
+			});
+			$('body').append(block);
 		}
 		else {
-			if(!fixed_block_active[block_id])
+			if($(id + '.fixed').size() == 0)
 				continue;
 
-			fixed_block_active[block_id] = false;
-
-			$('.main_block.static').eq(index).css({ 'z-index': 5000 });
-			$('.main_block.fixed').eq(index).remove();
+			$(id + '.static').css({ 'z-index': 5000 });
+			$(id + '.fixed').remove();
 		}
 	}
 
 	if ($(window).scrollTop() >= $('header').height()) {
-		if (!fixed_nav_active) {
+		if ($('nav.fixed').size() == 0) {
 			var nav = $('nav').clone().addClass('fixed');
 			$('body').append(nav);
-
-			fixed_nav_active = true;
 		}
 	}
-	else {
+	else
 		$('nav.fixed').remove();
-
-		fixed_nav_active = false;
-	}
 });

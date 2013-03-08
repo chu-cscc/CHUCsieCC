@@ -90,13 +90,15 @@ footer {
 	z-index: 5000;
 }
 
-footer > div {
+footer .info {
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.top {
-	margin: -40px auto 0 auto;
+footer .top {
+	position: absolute;
+	margin: -40px 0 0 -20px;
+	left: 50%;
 	width: 0px;
 	height: 0px;
 	border: 20px solid;
