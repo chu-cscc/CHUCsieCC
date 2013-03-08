@@ -31,7 +31,7 @@ $('#services .menu .item').on('mouseover', function() {
 
 var fixed_nav_active = false;
 $(window).on('scroll', function () {
-	if ($('body').scrollTop() >= $('header').height()) {
+	if ($(window).scrollTop() >= $('header').height()) {
 		if (!fixed_nav_active) {
 			var nav = $('nav').clone().addClass('fixed');
 
