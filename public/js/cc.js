@@ -31,10 +31,9 @@ $('.top').on('click', function (event) {
 
 $(window).on('scroll', function () {
 	for (var index = 0;index < $('.main_block.static').size();index++) {
-		var top = $('.main_block.static').eq(index).position().top;
 		var id = '#' + $('.main_block.static').eq(index).attr('id');
 
-		if ($(window).scrollTop() >= (top - $('nav').height())) {
+		if ($(window).scrollTop() >= ($(id + '.static').position().top - $('nav').height())) {
 			if($(id + '.fixed').size() != 0)
 				continue;
 
@@ -42,7 +41,7 @@ $(window).on('scroll', function () {
 
 			var block = $(id + '.static').clone();
 			block.removeClass('static').addClass('fixed').css({
-				'z-index': top,
+				'z-index': index + 100,
 				top: $('nav').height()
 			});
 			$('body').append(block);
