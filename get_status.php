@@ -15,7 +15,7 @@ foreach ($server_list as $index => $ip) {
 }
 
 date_default_timezone_set('Asia/Taipei');
-$status['date'] = date('Y-m-d h:i:s');
+$status['date'] = date('Y-m-d H:i:s');
 $status['timestamp'] = time();
 
 fwrite(fopen($status_file, 'w'), json_encode($status));

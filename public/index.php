@@ -6,10 +6,11 @@ $status = json_decode($json, true);
 <html lang="zh-tw">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
 	<title>中華大學資訊工程系 - 計算機中心</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="keywords" content="中華大學, 資訊工程系, 資工系, 計算機中心, 系計中">
 	
 	<link rel="stylesheet" href="css/html5.css">
 	<link rel="stylesheet" href="css/cc.css">
@@ -20,24 +21,11 @@ $status = json_decode($json, true);
 		<span class="slogan">CHU CSIE - Computer Center</span>
 	</header>
 	<nav>
-		<a href="#about">關於</a>
 		<a href="#status">伺服器狀態</a>
 		<a href="#services">服務</a>
 		<a href="#opening">開放時間</a>
 		<a href="#contact">聯絡</a>
 	</nav>
-
-	<div id="about" class="main_block">
-		<div class="block about">
-			<div class="title">
-				<h2>關於</h2>
-				<span>- About</span>
-			</div>
-			<div class="content">
-				<p>既然回不到過去，那只好重新來過。</p>
-			</div>
-		</div>
-	</div>
 	
 	<div id="status" class="main_block">
 		<div class="block status">
@@ -47,15 +35,15 @@ $status = json_decode($json, true);
 			</div>
 			<div class="content">
 				<div class="dns server">
-					<h3>DN Server</h3>
+					<h3>DNS</h3>
 					<div class="<?=$status[20] ? "up" : "down"?>"></div>
 				</div>
 				<div class="ftp server">
-					<h3>FTP Server</h3>
+					<h3>FTP</h3>
 					<div class="<?=$status[11] ? "up" : "down"?>"></div>
 				</div>
 				<div class="web server">
-					<h3>Web Server</h3>
+					<h3>Web</h3>
 					<div class="<?=$status[8] ? "up" : "down"?>"></div>
 				</div>
 				<div class="date">上次更新 <?=$status['date']?></div>
