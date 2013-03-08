@@ -27,6 +27,40 @@ $status = json_decode($json, true);
 		<a href="#contact">聯絡</a>
 	</nav>
 	
+	<!--[if lt IE 8]>
+	<div id="browser" class="main_block static">
+		<div class="block browser">
+			<div class="title">
+				<h2>選擇更好的瀏覽器</h2>
+				<span>- Choose a Better Browser</span>
+			</div>
+			<div class="content">
+				<h3>你的瀏覽器已過時，請更新你的瀏覽器</h3>
+				<a href="http://www.google.com/intl/zh-TW/chrome/browser/" target="_blank">
+					<img src="img/chrome-logo.png" alt="Chrome">
+					<br />
+					Chrome
+				</a>
+				<a href="http://mozilla.com.tw/firefox/" target="_blank">
+					<img src="img/firefox-logo.png" alt="Firefox">
+					<br />
+					Firefox
+				</a>
+				<a href="http://www.opera.com/zh-tw/computer/windows" target="_blank">
+					<img src="img/opera-logo.png" alt="Opera">
+					<br />
+					Opera
+				</a>
+				<a href="http://windows.microsoft.com/zh-tw/internet-explorer/download-ie" target="_blank">
+					<img src="img/ie9-logo.png" alt="IE 9+">
+					<br />
+					IE 9+
+				</a>
+			</div>
+		</div>
+	</div>
+	<![endif]-->
+
 	<div id="status" class="main_block static">
 		<div class="block status">
 			<div class="title">

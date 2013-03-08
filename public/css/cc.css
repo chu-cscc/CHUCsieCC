@@ -162,6 +162,39 @@ footer .top {
 	padding: 5px 25px;
 }
 
+#browser {
+	background: #eee;
+	color: #555;
+}
+
+#browser .content {
+	text-align: center;
+}
+
+#browser .content a {
+	display: inline-block;
+	text-align: center;
+	margin: 0 20px;
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+
+#browser .content a:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+}
+
+#browser .content img {
+	width: 100px;
+	height: 100px;
+}
+
 #status {
 	background: #333;
 	color: #eee;
