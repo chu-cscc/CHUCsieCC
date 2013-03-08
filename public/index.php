@@ -27,7 +27,7 @@ $status = json_decode($json, true);
 		<a href="#contact">聯絡</a>
 	</nav>
 	
-	<div id="status" class="main_block">
+	<div id="status" class="main_block unfixed">
 		<div class="block status">
 			<div class="title">
 				<h2>伺服器狀態</h2>
@@ -51,7 +51,7 @@ $status = json_decode($json, true);
 		</div>
 	</div>
 
-	<div id="services" class="main_block">
+	<div id="services" class="main_block unfixed">
 		<div class="block services">
 			<div class="title">
 				<h2>服務</h2>
@@ -118,7 +118,7 @@ $status = json_decode($json, true);
 		</div>
 	</div>
 
-	<div id="opening" class="main_block">	
+	<div id="opening" class="main_block unfixed">	
 		<div class="block opening">
 			<div class="title">
 				<h2>開放時間</h2>
@@ -217,7 +217,7 @@ $status = json_decode($json, true);
 		</div>
 	</div>
 
-	<div id="contact" class="main_block">
+	<div id="contact" class="main_block unfixed">
 		<div class="block contact">
 			<div class="title">
 				<h2>聯絡</h2>
