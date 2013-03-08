@@ -235,7 +235,7 @@ footer > div {
 	clear: both;
 }
 
-#services .item.active {
+#services .menu .item.active {
 	background: #eee;
 	border-radius: 5px; 
 	-moz-border-radius: 5px; 
@@ -252,11 +252,6 @@ footer > div {
 	display: inline-block;
 	text-align: center;
 	margin-right: 25px;
-}
-
-#services .info .mirror img {
-	width: 150px;
-	height: 150px;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
@@ -264,12 +259,17 @@ footer > div {
 	-o-filter: grayscale(100%);
 }
 
-#services .info .mirror img:hover {
+#services .info .mirror a:hover {
 	filter: grayscale(0);
 	-webkit-filter: grayscale(0);
 	-moz-filter: grayscale(0);
 	-ms-filter: grayscale(0);
 	-o-filter: grayscale(0);
+}
+
+#services .info .mirror img {
+	width: 150px;
+	height: 150px;
 }
 
 #opening {
@@ -292,7 +292,11 @@ footer > div {
 	font-size: 20px;
 }
 
-#opening thead {
+#opening table span {
+	font-size: 14px;
+}
+
+#opening table thead {
 	font-size: 20px;
 	background: #bbb;
 }
@@ -301,11 +305,7 @@ footer > div {
 	background: #ddd;
 }
 
-#opening table span {
-	font-size: 14px;
-}
-
-#opening td {
+#opening table td {
 	vertical-align: middle;
 	padding: 5px;
 	margin: 2px;
