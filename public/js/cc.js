@@ -62,10 +62,10 @@ $(window).on('scroll', function () {
 
 		var gap = $(id + '.fixed').height() - $(window).height();
 		var top = $(id + '.static').position().top - $(window).scrollTop();
-		
-		if (gap > 0 && top + gap >= 0) {
+
+		if (gap > 0) {
 			$(id + '.fixed').css({
-			 	top: top
+			 	top: top + gap >= 0 ? top : -gap
 			});
 		}
 	}
