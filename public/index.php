@@ -14,6 +14,8 @@ $status = json_decode($json, true);
 	
 	<link rel="stylesheet" href="css/html5.css">
 	<link rel="stylesheet" href="css/cc.css">
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 	<header id="top">
