@@ -114,7 +114,7 @@ $status = json_decode($json, true);
 				</div>
 				<div class="info">
 					<div class="mirror">
-						<h3>伺服器通訊協定</h3>
+						<h3>支援通訊協定</h3>
 						<span><a href="ftp://ftp.csie.chu.edu.tw" target="_blank">FTP</a></span>
 						<span><a href="http://ftp.csie.chu.edu.tw" target="_blank">HTTP</a></span>
 						<hr>
