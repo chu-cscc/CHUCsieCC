@@ -9,7 +9,7 @@ $status = json_decode($json, true);
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 
 	<title>中華大學資訊工程系 - 計算機中心</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="中華大學, 資訊工程系, 資工系, 計算機中心, 系計中">
 	
 	<link rel="stylesheet" href="css/html5.css">
@@ -27,7 +27,7 @@ $status = json_decode($json, true);
 		<a href="#contact">聯絡</a>
 	</nav>
 	
-	<!--[if lt IE 8]>
+	<!--[if lt IE 9]>
 	<div id="browser" class="main_block static">
 		<div class="block browser">
 			<div class="title">
@@ -112,8 +112,9 @@ $status = json_decode($json, true);
 				</div>
 				<div class="info">
 					<div class="mirror">
-						<h3>伺服器連結</h3>
-						<span><a href="ftp://ftp.csie.chu.edu.tw" target="_blank">ftp://ftp.csie.chu.edu.tw</a></span>
+						<h3>伺服器通訊協定</h3>
+						<span><a href="ftp://ftp.csie.chu.edu.tw" target="_blank">FTP</a></span>
+						<span><a href="http://ftp.csie.chu.edu.tw" target="_blank">HTTP</a></span>
 						<hr>
 						<h3>Linux安裝光碟 / 套件庫</h3>
 						<a href="ftp://ftp.csie.chu.edu.tw/ArchLinux" target="_blank">
@@ -144,7 +145,7 @@ $status = json_decode($json, true);
 						<h3>地點</h3>
 						<span>中華大學工程一館 E106</span>
 						<hr>
-						<h3>說明</h3>
+						<h3>使用說明</h3>
 						<span>建置中</span>
 					</div>
 				</div>
@@ -152,7 +153,7 @@ $status = json_decode($json, true);
 		</div>
 	</div>
 
-	<div id="opening" class="main_block static">	
+	<div id="opening" class="main_block static">
 		<div class="block opening">
 			<div class="title">
 				<h2>開放時間</h2>
