@@ -148,7 +148,14 @@ $status = json_decode($json, true);
 						<span>中華大學工程一館 E106</span>
 						<hr>
 						<h3>使用說明</h3>
-						<span>建置中</span>
+						<ol>
+							<li>入內請脫鞋</li>
+							<li>使用電腦前請在櫃台登記</li>
+							<li>教室內禁止飲食</li>
+							<li>請勿任意進入機房</li>
+							<li>如需列印請自備紙張</li>
+							<li>如有問題請詢問值班人員</li>
+						</ol>
 					</div>
 				</div>
 			</div>
@@ -261,13 +268,12 @@ $status = json_decode($json, true);
 				<span>- Contact</span>
 			</div>
 			<div class="content">
-				<h3>伺服器管理員</h3>
+				<h3>伺服器管理</h3>
 				<p>
-					巫文翔 (刀疤)<br />
 					E113 | 網際網路計算實驗室
 				</p>
 				<br />
-				<h3>電腦教室管理員</h3>
+				<h3>電腦教室管理</h3>
 				<p>
 					洪培皓
 				</p>
